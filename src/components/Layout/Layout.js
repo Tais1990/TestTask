@@ -1,6 +1,12 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
+class Footer extends React.Component {
+	render() {
+		return <footer>!!!Footer</footer>;
+	}
+}
+
 class Layout extends React.Component {
 	static propTypes = {
 		children: PropTypes.node.isRequired
@@ -11,7 +17,7 @@ class Layout extends React.Component {
 			<div>
 				{/* <Header /> */}
 				{this.props.children}
-				{/* <Footer /> */}
+				<Footer/>
 			</div>
 		);
 	}
