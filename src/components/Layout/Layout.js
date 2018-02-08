@@ -1,11 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-
-class Footer extends React.Component {
-	render() {
-		return <footer>!!!Footer</footer>;
-	}
-}
+import Footer from 'components/Footer';
 
 class Layout extends React.Component {
 	static propTypes = {
@@ -15,9 +10,13 @@ class Layout extends React.Component {
 	render() {
 		return (
 			<div>
-				{/* <Header /> */}
-				{this.props.children}
-				<Footer/>
+				<div className ="wrap">
+					{/* <Header /> */}
+					{this.props.children}
+				</div>
+				<footer className ="row vertical-center">
+					<Footer/>
+				</footer>
 			</div>
 		);
 	}
