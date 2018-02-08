@@ -25,12 +25,14 @@ class AxiosTalaikis extends React.Component {
 	}
 	request = () => {
 		const tmp = this;
+
 		axios.get('https://talaikis.com/api/quotes/random')
 			.then(function(response) {
 				tmp.setState({Value: response.data.quote, Author: response.data.author});
 			})
 			.catch(function(response) {
 				console.log(response);
+				tmp.setState({Value: 'time service unavailable', Author: ''});
 			});
 	}
 
