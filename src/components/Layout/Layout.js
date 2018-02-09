@@ -14,9 +14,7 @@ class Layout extends React.Component {
 					{/* <Header /> */}
 					{this.props.children}
 				</div>
-				<footer className ="row vertical-center">
-					<Footer/>
-				</footer>
+				<Footer/>
 			</div>
 		);
 	}

@@ -7,6 +7,7 @@ import svgFacebook 	from 'images/icons/fb.svg';
 class Footer extends React.Component {
 	render() {
 		return (
+			/*
 			<div className = "home-container">
 				<div className ="copyright">
 					<div className = "home-table v-align">
@@ -52,7 +53,50 @@ class Footer extends React.Component {
 						</li>
 					</ul>
 				</div>
-			</div>
+			</div>*/
+			<footer className ="flaxConteiner">
+				<div className = "flex-item">
+					<div className = "copir">
+						<div className = "copiraiter">
+							© 2017 Isina Inc.
+						</div>
+						<div className = "referense">
+							<a href="/terms-of-use" target="_self"> Terms of Use </a> /
+							<a href="/privacy-notice" target="_self"> Privacy Notice </a> /
+							<a href="/official-rules" target="_self"> Official Rules </a>
+						</div>
+					</div>
+					<div className = "contact">
+						Контакты
+					</div>
+				</div>
+				<div className = "flex-item">
+					<div>
+						<a href = "https://twitter.com/isinaofficial/">
+							<Icon
+								className="HomePage__icon"
+								src={svgTwitter}
+							/>
+						</a>
+					</div>
+					<div>
+						<a href = "https://www.facebook.com/ISINAofficial/">
+							<Icon
+								className="HomePage__icon"
+								src={svgFacebook}
+							/>
+						</a>
+					</div>
+					<div>
+						<a href = "https://www.instagram.com/isinaofficial/">
+							<Icon
+								className="HomePage__icon"
+								src={svgInstagram}
+							/>
+						</a>
+					</div>
+				</div>
+			</footer>
 		);
 	}
 }
