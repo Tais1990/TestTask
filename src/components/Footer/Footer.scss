@@ -1,0 +1,50 @@
+$mobile: 600px;
+
+.footer{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  
+  @media (max-width: $mobile) {
+      display: block;
+    }
+
+
+  &__info {
+    text-align: center;  
+    @media (max-width: $mobile) {
+      width: auto;
+      margin-right: 0;
+    }
+    &__copirandref {
+      /*display:inline-block;*/      
+      &__copyright {
+        display:inline-block;
+      }
+      &__referense {
+        display:inline-block;
+      }      
+    }
+
+    &__contact {
+      &__dev {
+        display: inline-block;
+        text-align: center;
+        padding: 3px;
+      }
+    }
+  }
+
+  &__socialReferences {
+    white-space: nowrap;
+    @media (max-width: $mobile) {
+      width: auto;
+      text-align: center;
+    }
+
+    &__dev {
+      display: inline-block;
+      padding: 5px;
+    }    
+  }    
+}
