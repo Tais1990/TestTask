@@ -1,18 +1,19 @@
-$mobile: 600px;
+$mobile: 768px;
+$tablet: 1024px;
 
 .footer {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
   
-	@media (max-width: $mobile) {
-		display: block;
+	@media (max-width: $tablet) {
+		flex-direction: column
  	}
 
 
 	&__info {
 		text-align: center;  
-		@media (max-width: $mobile) {
+		@media (max-width: $tablet) {
 			width: auto;
 			margin-right: 0;
 		}	
@@ -28,6 +29,12 @@ $mobile: 600px;
 */
 	&__copir-and-ref {
 		display: flex;
+		text-align: center; 
+		justify-content:center;
+
+		@media (max-width: $mobile) {
+      		flex-direction: column;
+    	}
 	}
 
 	&__contact {
@@ -49,7 +56,7 @@ $mobile: 600px;
 
 	&__social-references {
 		white-space: nowrap;
-		@media (max-width: $mobile) {
+		@media (max-width: $tablet) {
 			width: auto;
 			text-align: center;
 		}
